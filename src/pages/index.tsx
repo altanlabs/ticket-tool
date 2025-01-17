@@ -34,7 +34,7 @@ export default function IndexPage() {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          Ticket Management Dashboard
+          Ticket Management Dashboard - Mod View
         </h1>
         <div className="flex justify-center gap-4">
           <Input placeholder="Search tickets..." className="max-w-md" />

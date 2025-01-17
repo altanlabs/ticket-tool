@@ -17,6 +17,7 @@ import { Layout } from "./layout";
 import Index from "./pages/index";
 import NotFound from "./pages/NotFound";
 import DashboardPage from "./pages/dashboard/DashboardPage";
+import UserView from "./pages/UserView";
 import { useTheme } from "./theme/use-theme";
 
 const appName = "My app";
@@ -84,6 +85,7 @@ const App = () => {
                         title: appName,
                         navigation: [
                           { label: "Home", href: "/" },
+                          { label: "User View", href: "/userview" },
                           { label: "About", href: "/about" },
                           { label: "Contact", href: "/contact" },
                           { label: "Pricing", href: "/pricing" },
@@ -96,6 +98,7 @@ const App = () => {
                   }
                 >
                   <Route index element={<Index />} />
+                  <Route path="userview" element={<UserView />} />
                   <Route path="*" element={<NotFound />} />
                 </Route>
 
