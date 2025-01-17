@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -43,7 +42,8 @@ export default function IndexPage() {
           <Button size="lg">Search</Button>
         </div>
         <ChartContainer config={{}}>
-          <div>Chart Content Here</div> {/* Placeholder for chart content */}
+          {/* Add chart components here */}
+          <div>Chart Content Here</div>
         </ChartContainer>
       </motion.section>
 
