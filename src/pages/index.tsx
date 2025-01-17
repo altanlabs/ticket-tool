@@ -1,17 +1,15 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Component, Palette, Zap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ChartContainer, ChartTooltip, ChartLegend } from "@/components/ui/chart";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { Toast, ToastProvider, ToastViewport, ToastTitle, ToastDescription, ToastClose } from "@/components/ui/toast";
 import { Switch } from "@/components/ui/switch";
+import { ChartContainer } from "@/components/ui/chart";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -28,8 +26,6 @@ const staggerContainer = {
 };
 
 export default function IndexPage() {
-  const navigate = useNavigate();
-
   return (
     <div className="container mx-auto px-4 py-16 space-y-32">
       {/* Dashboard Section */}
@@ -47,7 +43,7 @@ export default function IndexPage() {
           <Button size="lg">Search</Button>
         </div>
         <ChartContainer config={{}}>
-          {/* Add chart components here */}
+          <div>Chart Content Here</div> {/* Placeholder for chart content */}
         </ChartContainer>
       </motion.section>
 
